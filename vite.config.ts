@@ -1,11 +1,10 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
 
-export default defineConfig(({ command }) => {
+export default defineConfig(() => {
   return {
     plugins: [react()],
-    // Use absolute base so built assets resolve under nested routes on Pages
-    base: '/Sanctum/',
+    base: '/Sanctum/', // Ensure this is always used for build and preview
     server: {
       port: 5173,
       host: true,
