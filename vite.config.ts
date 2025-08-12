@@ -4,8 +4,8 @@ import react from '@vitejs/plugin-react-swc'
 export default defineConfig(({ command }) => {
   return {
     plugins: [react()],
-    // Use relative paths so the app works under any subpath (GitHub Pages repo name case-insensitive)
-    base: './',
+    // Use absolute base so built assets resolve under nested routes on Pages
+    base: '/Sanctum/',
     server: {
       port: 5173,
       host: true,

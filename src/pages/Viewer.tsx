@@ -259,7 +259,7 @@ function PokemonCard({ mon, aniSprites, expertMode }: { mon: any; aniSprites: bo
   const itemIcon = useMemo(() => {
     if (!mon.item) return null;
     const itemId = mon.item.toLowerCase().replace(/ /g, '-').replace(/[^a-z0-9-]/g, '');
-    const base = ((import.meta as any).env?.BASE_URL || './').replace(/\/$/, '');
+    const base = (import.meta as any).env?.BASE_URL.replace(/\/$/, '') || '';
     const itemUrl = `${base}/Items/${itemId}.png`;
     return <img className="item-icon" src={itemUrl} alt={mon.item} title={mon.item} loading="lazy" onError={(e) => {
       const target = e.target as HTMLImageElement;

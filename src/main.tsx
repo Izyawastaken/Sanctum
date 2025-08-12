@@ -32,7 +32,7 @@ if (typeof performance !== 'undefined') {
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <RootTheme>
-      <BrowserRouter basename={(import.meta.env.BASE_URL && import.meta.env.BASE_URL !== './') ? import.meta.env.BASE_URL.replace(/\/$/, '') : ''}>
+      <BrowserRouter basename={import.meta.env.BASE_URL.replace(/\/$/, '')}>
         <Suspense fallback={
                       <div style={{
               display: 'flex',
