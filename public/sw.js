@@ -1,7 +1,7 @@
 // Service Worker for Sanctum - Blazing Fast Performance
-const CACHE_NAME = 'sanctum-v1';
-const STATIC_CACHE = 'sanctum-static-v1';
-const IMAGE_CACHE = 'sanctum-images-v1';
+const CACHE_NAME = 'sanctum-v2';
+const STATIC_CACHE = 'sanctum-static-v2';
+const IMAGE_CACHE = 'sanctum-images-v2';
 
 // Assets to cache immediately
     const STATIC_ASSETS = [

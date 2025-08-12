@@ -7,6 +7,7 @@ yarn-error.log*
 # Build outputs
 dist/
 build/
+artifact pages/
 
 # Environment variables
 .env
